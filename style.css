@@ -166,6 +166,10 @@ iframe{
         inline-size: 250px;
         font-size: 15px;
         padding-left: 10px;
+        margin: 0px;
+    }
+    .iframe{
+        display: none;
     }
     .h3-noticias{
         inline-size: 200px;
