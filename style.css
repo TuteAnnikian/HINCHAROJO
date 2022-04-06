@@ -2,7 +2,7 @@ body{
     background-color: black;
 }
 header{
-	background-color: #990000;
+    background: linear-gradient(70deg, rgb(24, 0, 0), rgb(175, 0, 0));
 	height: 50px;
 	padding-top: 40px; 
 	padding-bottom: 25px;
@@ -41,6 +41,9 @@ a{
     color: #ffffff;
     font-family: "Montserrat", Sans-serif;
     font-size: 13px;
+}
+a:hover{
+    color: rgb(143, 143, 143);
 }
 footer{
     text-align: center;
