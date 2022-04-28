@@ -19,7 +19,7 @@ body{
     color: rgb(255, 255, 255);
     padding-left: 30px;
 }
-h1, h3{
+h1{
     color: #ffffff;
     padding-left: 52px;
     font-family: "Montserrat", Sans-serif;
@@ -28,6 +28,9 @@ h1, h3{
     font-size: 30px;
     text-align: center;
 }
+h3{@extend h1
+}
+
 .menu{
     display: flex;
     flex-direction: row;
@@ -172,24 +175,26 @@ a:hover{
         padding-left: 20px;
         font-size: 20px;
     }
-    .h3-sobrenosotros{
-        inline-size: 250px;
-        font-size: 15px;
-        padding-left: 10px;
-        margin: 0px;
     }
     .iframe{
         display: none;
-    }
-    .h3-noticias{
-        inline-size: 200px;
-        font-size: 15px;
-        padding-left: 20px;
     }
     .form{
         inline-size: 100px;
     }
     .label{
-        padding-left: 12px;
-    }
-} 
+        padding-left: 12px;}
+
+@mixin h3 ($pdlft) {
+    inline-size: 250px;
+    font-size: 15px;
+    padding-left: 10px;
+    margin: 0px;
+    padding-left: $pdlft;
+}
+.h3-sobrenosotros{
+    @include h3 (10px)
+}
+.h3-noticias{
+    @include h3 (20px)
+}
