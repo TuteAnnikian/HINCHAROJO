@@ -13,11 +13,18 @@ min-height: 100vh;}
   width: 85%;
 }
 .bg-light {
-  background: linear-gradient(70deg, #520101, #970101); }
+  place-content: space-between;
 
-.navbar-expand-lg .navbar-collapse {
-  flex-basis: auto;
-  justify-content: right; }
+  background: linear-gradient(70deg, #520101, #970101); }
+  .mx-auto{
+    max-width: none;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    flex-basis: auto;
+    justify-content: right;
+    flex-grow: 0
+}
 
 .navbar-light .navbar-nav .nav-link {
   padding-right: 25px;
@@ -43,7 +50,7 @@ h1, h3 {
   padding-left: 52px;
   font-family: "Montserrat", Sans-serif;
   font-weight: lighter;
-  padding-top: 25px;
+  padding-top: 5px;
   font-size: 30px;
   text-align: center; }
 
@@ -118,10 +125,11 @@ label {
   padding-bottom: 10px;
 }
 .h3-sobrenosotros {
-  inline-size: 50%;
   font-size: 20px;
-  text-align: center; }
-
+  text-align: center; 
+  inline-size: 615px;
+  padding: 0px;
+}
 a:hover {
   color: #8f8f8f; }
 
@@ -133,13 +141,12 @@ margin: 20px;
     background-color: #0f0f0f;
     margin:45px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     align-content: space-around;
 }
 .card{
-  margin: 2px;
+  margin: 10px;
   background-color: #1b1b1b;
   color: #ffffff;
   justify-content: center;  border: solid #272727;
@@ -169,7 +176,7 @@ text-align: center;}
     justify-content: left;
     width: 100px;
     line-height: 0.9;
-    margin-left: 60px;
+    margin-left: 8px;
     margin-top: 60px;
 }
 .h5-Inicio{
@@ -219,7 +226,9 @@ label{
 
 .slide{
  margin-top: 10px;
+ margin-bottom: 10px;
  width: 50%;
+ border: solid rgb(87, 87, 87);
 }
 .slide img {
  height: 55vh;
@@ -236,14 +245,15 @@ div.body{
       }
       .sobrenos{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         text-align: center;
       }
       .screen_lda{
-        height: 400px;
+        height: 500px;
       }
-
+/*
       @media (min-width: 576px)
   {
   .grid-container {
@@ -321,4 +331,4 @@ div.body{
   .form {
     inline-size: 100px; }
   .label {
-    padding-left: 12px; } }
+    padding-left: 12px; } } */
